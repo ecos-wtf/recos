@@ -1,4 +1,4 @@
-# ReCos
+# ReCOS
 
 Reverse engineering resources for the eCOS platform. Mostly focused on Broadcom eCOS platform at the moment.
 
