@@ -209,6 +209,8 @@ This will put everything in `/tmp/sorted`. Next, you can run the FIDB generator:
 auto_fidb.sh
 ```
 
+If you trust me, you can just use the eCOS 2.0 FIDB that I generated, named `ecos-mips.be.32.fidb`.
+
 ### eCOS Broadcom Function Auto-Renaming (Ghidra)
 
 Simply copy `BcmDebugLogsRenameFunctions.java` into your ghidra_scripts directory and it will appear in your Ghidra scripts. The script relies on the existence of specific functions, named `debug_logger`. The script will faile if you did not identify those first, and they vary from firmware to firmware (but once you're onto them, you'll auto-rename thousands of functions in one go).
