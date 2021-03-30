@@ -209,7 +209,7 @@ This will put everything in `/tmp/sorted`. Next, you can run the FIDB generator:
 auto_fidb.sh
 ```
 
-If you trust me, you can just use the eCOS 2.0 FIDB that I generated, named `ecos-mips.be.32.fidb`.
+If you trust me, you can just use the eCOS 2.0 FIDB that I generated, named `ecos-mips.be.32.fidb` for big-endian architectures, and `ecos-mips.le.32` for little-endian.
 
 ### eCOS Broadcom Function Auto-Renaming (Ghidra)
 
