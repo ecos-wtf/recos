@@ -215,6 +215,8 @@ If you trust me, you can just use the eCOS 2.0 FIDB that I generated, named `eco
 
 Simply copy `BcmDebugLogsRenameFunctions.java` into your ghidra_scripts directory and it will appear in your Ghidra scripts. The script relies on the existence of specific functions, named `debug_logger`. The script will faile if you did not identify those first, and they vary from firmware to firmware (but once you're onto them, you'll auto-rename thousands of functions in one go).
 
+Note: I have to put serious work into making the script more generic and refactor the whole thing, just be patient.
+
 ### eCOS Broadcom C++ vtable Auto-Renaming (Ghidra)
 
 Simply copy `BcmRenameLabelVTable.java` into your ghidra_scripts directory and it will appear in your Ghidra scripts. The script will have zero effect if you did not auto-rename the functions first as it will look for patterns of C++ function names (with '::' in it). 
