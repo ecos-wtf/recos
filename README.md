@@ -190,11 +190,9 @@ Sample run:
 
 ```
 binwalk --magic binwalk_bcm_ecos_magic.txt image1.bin 
-
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 0             0x0             Broadcom ProgramStore Firmware (manufacturer: ASKEY, signature: 0xD22F, control: 0x0005, major: 256, minor: 511, build time: 2017-06-30 12:17:00, length: 5258252 bytes, load address: 0x80004000, filename: TCG300-D22F.EG00.15.01.OBE.01.05.11-V-E-170630_sto.bin, HCS: 0x3594, CRC: 0x8D515D00)
-
 ```
 
 ### eCOS Standard Library FunctionID Generation
