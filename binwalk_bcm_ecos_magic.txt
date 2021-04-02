@@ -1,0 +1,208 @@
+# Broadcom ProgramStore firmware signatures
+
+# the following assumptions are made:
+#   - compression flag (control) is always set to 0x0005 (UseLZMACompression)
+#   - the build date is after the initial release of eCos
+#   - the build date is before April 2021
+
+# Default
+0   ushort  0x3350          Broadcom ProgramStore Firmware (signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# Netgear
+0   ushort  0xc200          Broadcom ProgramStore Firmware (manufacturer: Netgear, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+
+
+# Netgear C6300
+0   ushort  0xa0eb          Broadcom ProgramStore Firmware (manufacturer: Netgear, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# Sagemcom
+0   ushort  0x3390          Broadcom ProgramStore Firmware (manufacturer: Sagemcom, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# Technicolor
+0   ushort  0xa825          Broadcom ProgramStore Firmware (manufacturer: Technicolor, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# TWG
+0   ushort  0xa81b          Broadcom ProgramStore Firmware (manufacturer: TWG, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# TWG
+0   ushort  0xa815          Broadcom ProgramStore Firmware (manufacturer: TWG, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# Cisco
+0   ushort  0xa03a          Broadcom ProgramStore Firmware (manufacturer: Cisco, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# CBW
+0   ushort  0x8364          Broadcom ProgramStore Firmware (manufacturer: CBW, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)
+
+# ASKEY/Siligence
+0   ushort  0xd22f          Broadcom ProgramStore Firmware (manufacturer: ASKEY, signature: 0x%04X, 
+>2  ushort  x               control: 0x%04X,
+>2  ushort  !5              {invalid}
+>4  ushort  x               major: %d,
+>6  ushort  x               minor: %d,
+>8  date    x               build time: %s,
+>8  date    >1617356513     {invalid}
+>8  date    <904608000      {invalid}
+>12 ulong   x               length: %d bytes,
+>16 ulong   x               load address: 0x%x,
+>20 string  x               filename: %s,
+>20 string  x               {name}
+>68 string  x               
+>76 ulong   x               #image1 length: %d,
+>80 ulong   x               #image2 length: %d,
+>84 ushort  x               
+>88 ushort  x               HCS: 0x%X, 
+>90 ulong   x               CRC: 0x%X)

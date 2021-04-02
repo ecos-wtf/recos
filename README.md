@@ -182,6 +182,21 @@ WriteBPCMReg                            fcn.83f843f0        (0x83F843F0)
 
 ## eCOS Firmware Static Analysis
 
+### Binwalk Magic Signatures
+
+The file `binwalk_bcm_ecos_magic.txt` contains signatures for all manufacturers observed using Broadcom's ProgramStore firmware format.
+
+Sample run:
+
+```
+binwalk --magic binwalk_bcm_ecos_magic.txt image1.bin 
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Broadcom ProgramStore Firmware (manufacturer: ASKEY, signature: 0xD22F, control: 0x0005, major: 256, minor: 511, build time: 2017-06-30 12:17:00, length: 5258252 bytes, load address: 0x80004000, filename: TCG300-D22F.EG00.15.01.OBE.01.05.11-V-E-170630_sto.bin, HCS: 0x3594, CRC: 0x8D515D00)
+
+```
+
 ### eCOS Standard Library FunctionID Generation
 
 You can generate shared objects of eCOS standard library within a Vagrant virtual machine (see fidb-vm) and automagically generated a FunctionID database file out of it. **I strongly recommend you simply download the FIDB files that I made available through that repo though**. They work for eCOS 1.0, 2.0, and parts of 3.0. The documentation below is only helpful if you want to reproduce the build process.
